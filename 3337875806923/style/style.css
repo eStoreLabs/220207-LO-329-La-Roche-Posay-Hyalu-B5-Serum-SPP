@@ -332,25 +332,30 @@ font-weight: 400;
 
 /* usage instructions section */
 #la-roche.la-roche .es-use {
-  background-color: #a1d8e6;
+  background-color: #659acc;
 }
 
 @media screen and (min-width: 768px) {
   #la-roche.la-roche .es-use {
-    background-image: url(../images/bg-use-min.jpg);
+    background-image: url(../images/bg-use.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: right;
   }
 }
 
 #la-roche.la-roche .es-use__content {
  padding: 1.5rem;
+ color: white;
+ font-weight: 200;
+ font-size: smaller;
+ letter-spacing: 0.4px;
+ line-height: 2.5ch;
 }
 
 @media screen and (min-width: 768px) {
   #la-roche.la-roche .es-use__content {
-    max-width: 45%;
+    max-width: 42%;
     padding: 1rem 7rem;
   }
 }
@@ -359,25 +364,13 @@ font-weight: 400;
   text-transform: uppercase;
   font-weight: bold;
   font-size: clamp(2rem, 1.7222rem + 0.8889vw, 2.5rem);
-}
-
-#la-roche.la-roche ol {
-  list-style: none;
-  counter-reset: my-counter;
-}
-
-#la-roche.la-roche ol li {
-  counter-increment: my-counter;
-  margin-bottom: 0.7em;
-  padding: 0 0 0 .5em;
  
 }
 
-#la-roche.la-roche ol li::marker {
-  content: counter(my-counter) ".";
+#la-roche.la-roche .es-use__content span {
   font-weight: 400;
-  font-size: 1.5rem;
-}
+  font-size: 1.2em;
+ }
 
 /* usage routine (fancy) section */
 
