@@ -376,10 +376,10 @@ font-weight: 400;
 
 #la-roche.la-roche .es-cross {
   margin: 50px 0;
-  background-image: url(../images/bg-routine-min.jpg);
+  background-image: url(../images/bg-routine.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  background-size: 65%;
+  background-position: right; /* adjust */
   padding: 20px;
   display: flex;
   flex-direction: column;
