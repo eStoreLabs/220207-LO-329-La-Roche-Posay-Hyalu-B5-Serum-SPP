@@ -88,10 +88,11 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-image: url(../images/bg-hero.jpg);
+  background-image: url(../images/bg-hero.png);
   background-repeat: no-repeat;
-  background-position-x: -400%;
-  position: relative;
+  background-size: contain;
+  background-position-x: 150%;
+  /* position: relative; */
 }
 
 #la-roche.la-roche .es-kv__brand {
@@ -126,15 +127,16 @@
   margin-bottom: 0;
 }
 
-#la-roche.la-roche .es-kv__title span,
+/* #la-roche.la-roche .es-kv__title span,
 #la-roche .es-effects .es-effects__title span {
   color: var(--es-blue-accent);
-}
+} */
 
 #la-roche.la-roche .es-kv__logo {
   -webkit-animation: slideleft 0.6s ease forwards;
           animation: slideleft 0.6s ease forwards;
   max-width: 230px;
+  margin-left: 20px;
 }
 
 #la-roche.la-roche .es-kv__packshot img {
@@ -187,12 +189,11 @@
 
 /* results section */
 #la-roche.la-roche .es-results {
-  background-color: #1990cd;
+  background-color: #659acc;
   padding: 2rem;
   background-repeat: no-repeat;
-  background-position: left;
-  /* background-size: contain; */
-  background-size: 30%;
+  background-position: 0 0;
+  background-size: 27%;
   color: #fff;
   transition: background-size 300ms ease-in-out;
 }
@@ -200,12 +201,12 @@
 @media screen and (min-width: 768px) {
   #la-roche.la-roche .es-results {
     padding: 4rem 0 4rem 12rem;
-    background-image: url(../images/lrp-hyalu-b5-aquagel-spf30-pack-with-derm-hand-blue-background.jpg);
+    background-image: url(../images/hand-min.png);
   }
 }
 
 #la-roche.la-roche .es-results:hover {
-  background-size: 41%;
+  background-size: 29%;
 }
 
 #la-roche.la-roche .es-results__title {
@@ -221,16 +222,17 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  
 }
 
 #la-roche.la-roche .es-results__single {
-  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  flex-basis: 20ch;
+  flex-basis: 24ch;
   font-weight: 400;
   text-transform: uppercase;
+  text-align: center;
 }
 
 #la-roche.la-roche .es-results__single span {
@@ -238,12 +240,16 @@ font-weight: bold;
 font-size: 4.3rem;
 }
 
-#la-roche.la-roche .es-results__text {
-  font-size: 1.1rem;
+/* #la-roche.la-roche .es-results__text {
+  /* font-size: 1.1rem;
   text-transform: uppercase;
   font-weight: 400;
   text-align: center;
-}
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  outline: 1px solid blue;
+} */
 
 /* ingredients section */
 
@@ -263,7 +269,7 @@ font-size: 4.3rem;
 
 @media screen and (min-width: 768px) {
   #la-roche.la-roche .es-ingr__container {
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: unset;
   }
 }
@@ -297,11 +303,8 @@ font-size: 4.3rem;
 }
 
 #la-roche.la-roche .es-ingr__main--3 {
-  background-image: url(../images/gliceryna.jpg);
-}
+  background-image: url(../images/kompleks.png);
 
-#la-roche.la-roche .es-ingr__main--4 {
-  background-image: url(../images/wit-E.jpg);
 }
 
 #la-roche.la-roche .es-ingr__name {
@@ -310,6 +313,11 @@ font-size: 4.3rem;
   margin-top: 4rem;
   font-size: clamp(1rem, 0.8958rem + 0.3333vw, 1.1875rem);
   transition: 0.4s ease-in-out;
+}
+
+#la-roche.la-roche .es-ingr__name span {
+  font-weight: 200;
+  word-break: break-word;
 }
 
 #la-roche.la-roche .es-ingr__desc {
