@@ -657,13 +657,14 @@ font-family: "Locator Medium";
 #es-effaclar.es-effaclar .es-routine__link {
   margin: 0;
   padding: 0;
-  line-height: inherit;
-  color: inherit;
+  display: block;
+  text-align: center;
+  width: 150px;
   font-size: 15px;
   text-decoration: none;
   color: #fff;
   background: #01afec;
-  padding: 4px 16px;
+  padding: 4px;
   border: 1px solid #01afec;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -1057,20 +1058,20 @@ font-family: "Locator Medium";
   #es-effaclar.es-effaclar .es-routine__single {
     position: absolute;
     max-width: 190px;
-    right: 10px;
+    /* right: 10px; */
     margin-bottom: 0;
   }
   #es-effaclar.es-effaclar .es-routine__single--1 {
     top: 0;
-    right: 486px;
+    left: 10px;
   }
   #es-effaclar.es-effaclar .es-routine__single--2 {
     top: 30%;
-    left: 510px;
+    right: 10px;
   }
   #es-effaclar.es-effaclar .es-routine__single--3 {
     top: 55%;
-    right: 486px;
+    left: 10px;
   }
   #es-effaclar.es-effaclar .es-routine__packshot {
     display: none;
