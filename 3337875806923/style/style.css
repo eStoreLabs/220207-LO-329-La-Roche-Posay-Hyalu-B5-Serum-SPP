@@ -28,7 +28,7 @@
   font-size: 18px;
   font-weight: 200;
   line-height: 1.2;
-  max-width: 731px;
+  max-width: 769px;
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
@@ -94,6 +94,7 @@
 
 #es-effaclar.es-effaclar .es-kv__img--badge {
   padding: 16px;
+  max-width: 80%;
 }
 
 #es-effaclar.es-effaclar .es-kv__img--stamp {
@@ -553,7 +554,7 @@ font-family: "Locator Medium";
   line-height: inherit;
   color: #fff;
   font-size: 27px;
-  font-weight: bold;
+  font-family: "Locator Medium";
   text-transform: uppercase;
   margin-bottom: 24px;
 }
@@ -579,6 +580,10 @@ font-family: "Locator Medium";
   margin-bottom: 16px;
 }
 
+#es-effaclar.es-effaclar .es-use__text strong {
+  font-family: "Locator Medium";
+}
+
 #es-effaclar.es-effaclar .es-routine__title {
   margin: 0;
   padding: 0;
@@ -593,6 +598,9 @@ font-family: "Locator Medium";
   z-index: 1;
 }
 
+#es-effaclar.es-effaclar .es-routine__title strong {
+  font-family: "Locator Medium";
+}
 
 #es-effaclar.es-effaclar .es-routine__img {
   max-width: 100%;
@@ -612,6 +620,7 @@ font-family: "Locator Medium";
 #es-effaclar.es-effaclar .es-routine__number {
   margin: 0;
   padding: 0;
+  font-family: "Locator Medium";
   line-height: inherit;
   color: inherit;
   color: #01afec;
@@ -631,6 +640,7 @@ font-family: "Locator Medium";
 }
 
 #es-effaclar.es-effaclar .es-routine__subtitle strong {
+  font-family: "Locator Medium";
   font-size: 24px;
   display: block;
 }
@@ -694,7 +704,7 @@ font-family: "Locator Medium";
 }
 
 #es-effaclar.es-effaclar .es-terms__title span {
-  font-weight: 500;
+  font-family: "Locator Medium";
 }
 
 #es-effaclar.es-effaclar .es-terms__container {
@@ -733,19 +743,19 @@ font-family: "Locator Medium";
 }
 
 #es-effaclar.es-effaclar .es-terms__term--1 {
-  background: url("img/term-1.png");
+  background: url("../images/term-1.png");
 }
 
 #es-effaclar.es-effaclar .es-terms__term--2 {
-  background: url("img/term-2.png");
+  background: url("../images/term-2.png");
 }
 
 #es-effaclar.es-effaclar .es-terms__term--3 {
-  background: url("img/term-3.png");
+  background: url("../images/term-3.png");
 }
 
 #es-effaclar.es-effaclar .es-terms__term--4 {
-  background: url("img/term-4.png");
+  background: url("../images/term-4.png");
   background-position: right;
 }
 
@@ -762,9 +772,9 @@ font-family: "Locator Medium";
   margin-top: 16px;
   text-transform: uppercase;
   padding: 10px;
-  font-weight: 400;
+  /* font-weight: 400; */
   color: white;
-  min-width: 256px;
+  /* min-width: 256px; */
 }
 
 #es-effaclar.es-effaclar .es-terms__text--white {
@@ -787,10 +797,14 @@ font-family: "Locator Medium";
   #es-effaclar.es-effaclar .es-res__title--content {
     max-width: 450px;
   }
+  
+}
+
+@media (min-width: 500px) {
   #es-effaclar.es-effaclar .es-use__wrapper {
     background: url("../images/banner.png") no-repeat center right;
     background-size: cover;
-    height: 257px;
+    /* height: 257px; */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -798,9 +812,13 @@ font-family: "Locator Medium";
         -ms-flex-align: center;
             align-items: center;
   }
+  #es-effaclar.es-effaclar .es-use__content {
+    max-width: 380px;
+    padding-left: 30px;
+  }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 650px) {
   #es-effaclar.es-effaclar .es-kv__header {
     max-width: 607px;
     margin: 0 auto;
@@ -917,6 +935,9 @@ font-family: "Locator Medium";
     padding-right: 16px;
     padding-left: 0;
   }
+  #es-effaclar.es-effaclar .es-serum__feature {
+    width: 133px;
+  }
   #es-effaclar.es-effaclar .es-res {
     margin-bottom: 64px;
   }
@@ -987,7 +1008,8 @@ font-family: "Locator Medium";
   #es-effaclar.es-effaclar .es-use__wrapper {
     background: url("../images/banner.png") no-repeat center right;
     background-size: cover;
-    height: 257px;
+    background-position: right;
+    /* height: 257px; */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -996,7 +1018,8 @@ font-family: "Locator Medium";
             align-items: center;
   }
   #es-effaclar.es-effaclar .es-use__content {
-    padding-left: 64px;
+    padding-left: 50px;
+    max-width: unset;
   }
   #es-effaclar.es-effaclar .es-use__list {
     padding-left: 16px;
@@ -1034,6 +1057,7 @@ font-family: "Locator Medium";
   #es-effaclar.es-effaclar .es-routine__single {
     position: absolute;
     max-width: 190px;
+    right: 10px;
     margin-bottom: 0;
   }
   #es-effaclar.es-effaclar .es-routine__single--1 {
@@ -1074,6 +1098,3 @@ font-family: "Locator Medium";
 }
 /*# sourceMappingURL=style.css.map */
 
-#es-effaclar.es-effaclar .es-serum__feature {
-  width: 180px;
-}
