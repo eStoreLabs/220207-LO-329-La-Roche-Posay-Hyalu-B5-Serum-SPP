@@ -1,23 +1,30 @@
 /* Locator Web Light */
 @font-face {
-  font-family: 'LocatorWeb';
-  src: url("fonts/LocatorWebLight/LocatorWebLight.eot");
-  src: url("fonts/LocatorWebLight/LocatorWebLight.eot?#iefix") format("embedded-opentype"), url("fonts/LocatorWebLight/LocatorWebLight.woff2") format("woff2"), url("fonts/LocatorWebLight/LocatorWebLight.woff") format("woff");
+  font-family: 'Locator Light';
+  src: url("fonts/LocatorWebLight/LocatorWebLight.woff2") format("woff2"), url("fonts/LocatorWebLight/LocatorWebLight.woff") format("woff");
   font-weight: 200;
   font-style: normal;
+  font-display: swap;
 }
+/* @font-face {
+  font-family: 'Locator Light';
+  src: url('../fonts/locator_light-webfont.woff2') format('woff2'),
+       url('../fonts/locator_light-webfont.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+} */
 
 /* Locator Web Medium */
 @font-face {
-  font-family: 'LocatorWeb';
-  src: url("fonts/LocatorWebMedium/LocatorWebMedium.eot");
-  src: url("fonts/LocatorWebMedium/LocatorWebMedium.eot?#iefix") format("embedded-opentype"), url("fonts/LocatorWebMedium/LocatorWebMedium.woff2") format("woff2"), url("fonts/LocatorWebMedium/LocatorWebMedium.woff") format("woff");
+  font-family: 'Locator Medium';
+  src: url("fonts/LocatorWebMedium/LocatorWebMedium.woff2") format("woff2"), url("fonts/LocatorWebMedium/LocatorWebMedium.woff") format("woff");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 #es-effaclar.es-effaclar {
-  font-family: "LocatorWeb", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Locator Light", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
   font-weight: 200;
   line-height: 1.2;
@@ -29,13 +36,13 @@
   background: #fff;
 }
 
-#es-effaclar.es-effaclar h2,
+/* #es-effaclar.es-effaclar h2,
 #es-effaclar.es-effaclar h3,
 #es-effaclar.es-effaclar h4,
 #es-effaclar.es-effaclar h5 {
-  font-family: "LocatorWeb", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Locator Medium", Tahoma, Geneva, Verdana, sans-serif;
   color: #000;
-}
+} */
 
 #es-effaclar.es-effaclar * {
   -webkit-box-sizing: border-box;
@@ -164,6 +171,7 @@
 #es-effaclar.es-effaclar .es-kv__title {
   margin: 0;
   padding: 0;
+  font-family: "Locator Medium";
   line-height: inherit;
   color: inherit;
   font-size: 22px;
@@ -174,6 +182,7 @@
 }
 
 #es-effaclar.es-effaclar .es-kv__title span {
+  font-family: "Locator Light";
   color: #009fe3;
 }
 
@@ -241,6 +250,10 @@
   margin-bottom: 8px;
 }
 
+#es-effaclar.es-effaclar .es-serum__title strong {
+  font-family: "Locator Medium";
+}
+
 #es-effaclar.es-effaclar .es-serum__subtitle {
   margin: 0;
   padding: 0;
@@ -298,9 +311,9 @@
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
-  font-weight: 400;
+  font-family: "Locator Medium";
   margin: 16px 0;
   margin-bottom: 24px;
   text-transform: uppercase;
@@ -322,7 +335,6 @@
   line-height: inherit;
   color: inherit;
   font-size: 27px;
-  font-weight: 200;
   margin-bottom: 26px;
   text-transform: uppercase;
   color: #fff;
@@ -330,8 +342,12 @@
 
 #es-effaclar.es-effaclar .es-res__title--content {
   text-align: left;
-  max-width: 450px;
+  max-width: 240px;
   margin: auto;
+}
+
+#es-effaclar.es-effaclar .es-res__title--content strong {
+font-family: "Locator Medium";
 }
 #es-effaclar.es-effaclar .es-res__container {
   display: -webkit-box;
@@ -357,7 +373,7 @@
   padding: 0;
   line-height: inherit;
   color: inherit;
-  font-weight: 400;
+  font-family: "Locator Medium";
   font-size: 40px;
   color: #ffffff;
   text-align: center;
@@ -413,9 +429,9 @@
 #es-effaclar.es-effaclar .es-ingredients__title {
   margin: 0;
   padding: 0;
+  font-family: "Locator Medium";
   line-height: inherit;
   color: inherit;
-  font-weight: bold;
   text-transform: uppercase;
   font-size: 28px;
   margin-bottom: 32px;
@@ -441,7 +457,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 0px 10px;
+  gap: 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -466,27 +482,43 @@
 #es-effaclar.es-effaclar .es-ingredients__label {
   margin: 0;
   padding: 0;
-  line-height: inherit;
   color: inherit;
-  font-size: 16px;
-  padding: 10px 8px;
+  font-size: 12px;
+  padding: 8px;
   background: rgba(255, 255, 255, 0.66);
   position: absolute;
-  top: 24px;
+  top: 50%;
+  transform: translate(0%, -50%);
+  /* top: 24px; */
   left: 0;
-  font-weight: 500;
+  font-weight: 200;
   text-align: left;
   text-transform: uppercase;
-  width: 154px;
-  height: 100px;
+  width: 100%;
+  height: 88px;
   line-height: 1;
+}
+
+#es-effaclar.es-effaclar .es-ingredients__label--title {
+  margin: 0;
+  padding: 0;
+}
+
+#es-effaclar.es-effaclar .es-ingredients__label--title strong {
+  font-family: "Locator Medium";
+  margin: 0;
+}
+
+#es-effaclar.es-effaclar .es-ingredients__label--text {
+  font-size: 8px;
+  line-height: 1.1;
 }
 
 #es-effaclar.es-effaclar .es-ingredients__label span {
   font-weight: 200;
   font-size: 16px;
   letter-spacing: -1px;
-  position: relative;
+  /* position: relative; */
 }
 
 #es-effaclar.es-effaclar .es-ingredients__img {
@@ -510,7 +542,7 @@
 }
 
 #es-effaclar.es-effaclar .es-use__wrapper {
-  background-color: #2794cd;
+  background-color: #659acc;
   padding: 24px 16px;
   min-height: 257px;
 }
@@ -519,10 +551,9 @@
   margin: 0;
   padding: 0;
   line-height: inherit;
-  color: inherit;
   color: #fff;
   font-size: 27px;
-  font-weight: 200;
+  font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 24px;
 }
@@ -530,8 +561,7 @@
 #es-effaclar.es-effaclar .es-use__item {
   margin: 0;
   padding: 0;
-  line-height: inherit;
-  color: inherit;
+  line-height: 1.2;
   font-size: 15px;
   color: #fff;
   font-weight: 400;
@@ -563,9 +593,6 @@
   z-index: 1;
 }
 
-#es-effaclar.es-effaclar .es-routine__title span {
-  font-weight: 500;
-}
 
 #es-effaclar.es-effaclar .es-routine__img {
   max-width: 100%;
@@ -646,7 +673,7 @@
   margin: 0 auto;
   max-width: 100%;
   margin-bottom: -100px;
-  max-height: 400px;
+  max-height: 300px;
 }
 
 #es-effaclar.es-effaclar .es-terms {
@@ -754,6 +781,23 @@
   line-height: inherit;
   color: inherit;
   font-size: 11px;
+}
+
+@media (min-width: 450px) {
+  #es-effaclar.es-effaclar .es-res__title--content {
+    max-width: 450px;
+  }
+  #es-effaclar.es-effaclar .es-use__wrapper {
+    background: url("../images/banner.png") no-repeat center right;
+    background-size: cover;
+    height: 257px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -938,7 +982,7 @@
   #es-effaclar.es-effaclar .es-use__title {
     font-size: 32px;
     padding: 0;
-    font-weight: 400;
+    font-weight: bold;
   }
   #es-effaclar.es-effaclar .es-use__wrapper {
     background: url("../images/banner.png") no-repeat center right;
