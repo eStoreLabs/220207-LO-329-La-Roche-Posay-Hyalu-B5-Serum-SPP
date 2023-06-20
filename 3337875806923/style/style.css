@@ -441,7 +441,7 @@ font-family: "Locator Medium";
 
 #es-effaclar.es-effaclar .es-ingredients__container .es-ingredients__single {
   opacity: 1;
-  max-width: 162px;
+  max-width: 180px;
 }
 
 #es-effaclar.es-effaclar .es-ingredients__container:hover .es-ingredients__single {
@@ -496,7 +496,7 @@ font-family: "Locator Medium";
   text-align: left;
   text-transform: uppercase;
   width: 100%;
-  height: 88px;
+  height: 96px;
   line-height: 1;
 }
 
@@ -511,7 +511,8 @@ font-family: "Locator Medium";
 }
 
 #es-effaclar.es-effaclar .es-ingredients__label--text {
-  font-size: 8px;
+  font-family: "Locator Medium";
+  font-size: 10px;
   line-height: 1.1;
 }
 
@@ -919,7 +920,7 @@ font-family: "Locator Medium";
   }
   #es-effaclar.es-effaclar .es-kv__badge img {
     padding: 0;
-    margin-left: -60px;
+    margin-left: -20px;
     padding-bottom: 16px;
     margin-top: 42px;
   }
@@ -937,7 +938,7 @@ font-family: "Locator Medium";
     padding-left: 0;
   }
   #es-effaclar.es-effaclar .es-serum__feature {
-    width: 133px;
+    width: 150px;
   }
   #es-effaclar.es-effaclar .es-res {
     margin-bottom: 64px;
@@ -1019,8 +1020,8 @@ font-family: "Locator Medium";
             align-items: center;
   }
   #es-effaclar.es-effaclar .es-use__content {
-    padding-left: 50px;
-    max-width: unset;
+    padding-left: 30px;
+    max-width: 427px;
   }
   #es-effaclar.es-effaclar .es-use__list {
     padding-left: 16px;
